@@ -1,0 +1,16 @@
+.border{
+    border: 2px solid green;
+    margin: 5px;
+}
+.flex{
+    display: flex;
+}
+.justify-item{
+    justify-content: center;
+}
+.align-item{
+    align-items: center;
+}
+.bg-color{
+  background-color: #1f1f1f;
+}

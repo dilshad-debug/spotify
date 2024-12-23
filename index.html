@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/b5968adf0c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header">
+        <div class="log">
+          <img src="img/logo.svg" alt="" />
+        </div>
+        <div class="home">
+          <div class="home-img">
+            <img src="img/home.svg" alt="" />
+          </div>
+          <div class="search">
+            <img class="search-img" src="img/search.svg" alt="" />
+            <input type="text" placeholder="What do you want to play?" />
+            <img class="browse" src="img/browse.svg" alt="" />
+          </div>
+        </div>
+        <div class="login-container">
+          <div class="user">
+            <button class="signup">Signup</button>
+            <button class="login">Login</button>
+          </div>
+          <div class="hamburger-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="hamburger bg-color" id="hamburger">
+            <nav class="nav-items bg-color hide">
+              <button class="signup" id="toggle-signup">Signup</button>
+              <button class="login" id="toggle-login">Login</button>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="expand" id="expander">
+          <img src="img/playlist.svg" alt="">
+          <!-- <i class="fa-solid fa-right-long"></i> -->
+        </div>
+        <div class="left left-hide" id="left">
+          <div class="library">
+            <span>
+              <div class="lib-logo">
+                <img
+                  class="library-logo"
+                  src="img/library-logo.svg"
+                  alt="Library Logo"
+                  height="32"
+                />
+                <p>Your Library</p>
+              </div>
+              <img
+                class="plus-button"
+                src="img/plus-button.svg"
+                alt="Plus button"
+                height="20px"
+              />
+            </span>
+            <div class="playlist left-box bg-color">
+              <p class="first">Create your first playlist</p>
+              <p class="second">it's easy we will help you</p>
+              <button class="create-playlist">Create Playlist</button>
+            </div>
+            <div class="podcast left-box bg-color">
+              <p class="first">Lets find some podcasts to follow</p>
+              <p class="second">We'll keep you updated on new episodes</p>
+              <button class="browse-podcast">Browse podcasts</button>
+            </div>
+            <div class="songlist">
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-main">
+          <div class="right">
+            <div class="cardContainer">
+              <h1>Featured Charts</h1>
+              <div class="spotify-playlist">
+                
+                
+                
+                
+                
+              </div>
+            </div>
+
+          </div>
+          <div class="playbar">
+            <div class="playbtn">
+              <div class="songinfo">
+                <span class="songname"></span>
+              </div>
+              <div class="control">
+                <i id="previous" class="fa-solid fa-backward-step"></i>
+                <i id="pausebtn" class="fa-solid fa-pause"></i>
+                <i id="play" class="fa-solid fa-play"></i>
+                <i id="next" class="fa-solid fa-forward-step"></i>
+              </div>
+              <div class="songvol">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img src="img/volume.svg" alt="" />
+                  <input type="range" name="volume" id="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="left-footer">
+          <div class="side-footer">
+            <div class="side-footer-item"><a href="#">Legal</a></div>
+            <div class="side-footer-item">
+              <a href="#">Safety & Privacy Center</a>
+            </div>
+            <div class="side-footer-item"><a href="#">Privacy Policy</a></div>
+            <div class="side-footer-item"><a href="#">Cookies</a></div>
+            <div class="side-footer-item"><a href="#">About Ads</a></div>
+            <div class="side-footer-item"><a href="#">Accessibility</a></div>
+            <div class="side-footer-item"><a href="#">Cookies</a></div>
+          </div>
+          <div class="btn-lang">
+            <button>
+              <span><img src="img/globe.svg" alt="" /></span>English
+            </button>
+          </div>
+          <!-- <div class="cookies">
+            <a href="#"></a>
+          </div> -->
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
