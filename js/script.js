@@ -41,7 +41,7 @@ btnsonglist.addEventListener("click", () => {
 let songs;
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`spotify/${folder}/`);
+  let a = await fetch(`/spotify/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
