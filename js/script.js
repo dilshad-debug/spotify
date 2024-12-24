@@ -41,7 +41,7 @@ btnsonglist.addEventListener("click", () => {
 let songs;
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`/${folder}/`);
+  let a = await fetch(`spotify/${folder}/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -123,7 +123,7 @@ function formatTime(seconds) {
 }
 
 async function displayAlbums() {
-  let a = await fetch(`/songs/`);
+  let a = await fetch(`/spotify/songs/`);
   let response = await a.text();
   let div = document.createElement("div");
   div.innerHTML = response;
@@ -140,7 +140,7 @@ async function displayAlbums() {
 
       //get the metadata of the folder
 
-      let a = await fetch(`/songs/${folder}/info.json`);
+      let a = await fetch(`/spotify/songs/${folder}/info.json`);
       let response = await a.json();
       console.log(response);
       spotifyPlaylist.innerHTML =
