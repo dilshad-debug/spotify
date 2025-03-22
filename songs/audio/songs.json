@@ -1,0 +1,33 @@
+{
+    "songs": [
+      {
+        "title": "Dil Mein Ho Tum",
+        "filename": "03 - Dil Mein Ho Tum - WCI (2019).mp3",
+        "artist": "Unknown",
+        "album": "Unknown",
+        "cover": "cover.jpg"
+      },
+      {
+        "title": "Peele Peele O More Raja",
+        "filename": "Peele Peele O More Raja (Tirangaa).mp3",
+        "artist": "Unknown",
+        "album": "Unknown",
+        "cover": "cover.jpg"
+      },
+      {
+        "title": "Pehli Dafa",
+        "filename": "Pehli Dafa - Atif Aslam 190Kbps.mp3",
+        "artist": "Atif Aslam",
+        "album": "Unknown",
+        "cover": "cover.jpg"
+      },
+      {
+        "title": "Tajdar E Haram",
+        "filename": "Tajdar E Haram-(Mr-Jatt.com).mp3",
+        "artist": "Unknown",
+        "album": "Unknown",
+        "cover": "cover.jpg"
+      }
+    ]
+  }
+  
