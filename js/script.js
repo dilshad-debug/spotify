@@ -292,6 +292,51 @@ async function main() {
         .getElementsByTagName("input")[0].value = 10;
     }
   });
+
+  async function getSongs() {
+  let response = await fetch("/songs/audio/songs.json");
+  let data = await response.json();
+  
+  let songs = data.songs;
+  let songul = document.querySelector(".songlist ul");
+  songul.innerHTML = ""; // Clear existing songs
+
+  songs.forEach(song => {
+    let li = document.createElement("li");
+    li.innerHTML = `
+      <div class="info">
+        <i class="fa-solid fa-music"></i>
+        <div class="song-info">
+          <div class="song-name">${song.title}</div>
+          <div class="song-artist">${song.artist}</div>
+        </div>
+      </div>
+      <div class="playnow">
+        <span>Play Now</span>
+        <i class="fa-solid fa-play"></i>
+      </div>
+    `;
+    
+    // Click event to play song
+    li.addEventListener("click", () => {
+      playMusic(song.filename);
+    });
+
+    songul.appendChild(li);
+  });
+}
+
+function playMusic(filename) {
+  let audio = document.querySelector("#audio-player"); // Ensure you have an audio element
+  audio.src = `/songs/audio/${filename}`;
+  audio.play();
+
+  document.querySelector(".songname").innerText = filename.replace(".mp3", "");
+}
+
+// Call function to load songs on page load
+getSongs();
+
 }
 
 main();
