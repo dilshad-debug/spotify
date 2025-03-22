@@ -294,7 +294,7 @@ async function main() {
   });
 
   async function getSongs() {
-  let response = await fetch("/songs/audio/songs.json");
+  fetch("https://dilshad-debug.github.io/spotify/songs/audio/songs.json");
   let data = await response.json();
   
   let songs = data.songs;
