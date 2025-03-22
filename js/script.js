@@ -173,7 +173,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-  await getSongs("/songs/audio");
+  await getSongs("https://dilshad-debug.github.io/spotify/songs/audio");
   // console.log(songs);
   playMusic(songs[0], true);
 
