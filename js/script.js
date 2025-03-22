@@ -328,7 +328,7 @@ async function main() {
 
 function playMusic(filename) {
   let audio = document.querySelector("#audio-player"); // Ensure you have an audio element
-  audio.src = `/songs/audio/${filename}`;
+  audio.src = `https://dilshad-debug.github.io/spotify/songs/audio/${filename}`;
   audio.play();
 
   document.querySelector(".songname").innerText = filename.replace(".mp3", "");
